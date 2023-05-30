@@ -159,27 +159,18 @@
 
 			<div class="container">
 				<div class="current-month">
-					<div class="select expand-btn">
-						<span class="select-text">
-							Все студенты
-						</span>
-						<img src="./img/free-icon-font-angle-down-3916903.png" alt="" style="width: 20px;">
-					</div>
+					<select class="month-select">
+						<option value="month">Все Студенты</option>
+						<option value="month">1 поток</option>
+						<option value="month">2 поток</option>
+						<option value="month">3 поток</option>                
+					</select>
 			 </div>
 				<div class="monthButton">
 				<select class="month-select">
-					<option value="month">January</option>
-					<option value="month">February</option>
-					<option value="month">March</option>
-					<option value="month">April</option>
-					<option value="month">May</option>
-					<option value="month">June</option>
-					<option value="month">July</option>
-					<option value="month">August</option>
-					<option value="month">September</option>
-					<option value="month">October</option>
-					<option value="month">October</option>
-					<option value="month">December</option>                  
+					<option value="month">Добавить студента</option>
+					<option value="month">Добавить нескольких студентов</option>
+					<option value="month">Импортировать из csv</option>                  
 				</select>
 		 </div></div>
 
@@ -196,7 +187,7 @@
 								<th>Отображаемое имя</th>
 							</tr>
 							<tr>
-								<th>ID студента</th>
+								<th id="second-title-table">ID студента</th>
 							</tr>
 						</thead>
 						<tbody>
