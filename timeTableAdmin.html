@@ -107,22 +107,22 @@
 
           <div class="container">
              <div class="current-month">
-							<span id="date"></span>
+							<span id="date-text">Январь 30-2023</span>
 						</div>
              <div class="monthButton">
-             <select class="month-select">
-               <option value="month">January</option>
-               <option value="month">February</option>
-               <option value="month">March</option>
-               <option value="month">April</option>
-               <option value="month">May</option>
-               <option value="month">June</option>
-               <option value="month">July</option>
-               <option value="month">August</option>
-               <option value="month">September</option>
-               <option value="month">October</option>
-               <option value="month">October</option>
-               <option value="month">December</option>                  
+             <select class="month-select" id="month-select" onchange="updateText()">
+               <option value="1" selected>Январь</option>
+               <option value="2">Февраль</option>
+               <option value="3">Март</option>
+               <option value="4">Aпрель</option>
+               <option value="5">Май</option>
+               <option value="6">Июнь</option>
+               <option value="7">Июль</option>
+               <option value="8">Август</option>
+               <option value="9">Сентябрь</option>
+               <option value="10">Октябрь</option>
+               <option value="11">Ноябрь</option>
+               <option value="12">Декабрь</option>                  
              </select>
           </div></div>
 
