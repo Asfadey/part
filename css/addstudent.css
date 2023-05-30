@@ -1,0 +1,954 @@
+/* BODY */
+.back1 {
+    display: none;
+}
+
+body {
+    background-color: #22549E;
+    margin: 0;
+    padding: 0;
+}
+
+.ff a img {
+    display: none;
+}
+
+.menu__btn {
+    display: none;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+    display: none;
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+    display: none;
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+    display: none;
+}
+
+#menu__toggle:checked~.menu__box {
+    left: 0 !important;
+}
+
+#menu__toggle:checked+.menu__btn {
+    z-index: 222;
+    position: fixed;
+}
+
+.menu__btn {
+    position: absolute;
+    top: 20px;
+    margin-top: 3%;
+    margin-left: 90%;
+    left: -10px;
+    width: 43px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #fff;
+    transition-duration: .25s;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid #111;
+}
+
+.menu__item svg {
+    margin-right: 4%;
+    transform: translateY(5px);
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -11px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 11px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    margin: 0;
+    padding-top: 20%;
+    height: 100vh;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+    z-index: 100;
+    padding-bottom: 100%;
+}
+
+.menu__item {
+    display: block;
+    padding: 6px 24px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+    padding-bottom: 0;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 4%;
+}
+
+.f {
+    font-size: 35px;
+    display: flex;
+    color: #0067F5;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+ul img {
+    width: 55px;
+    height: 55px;
+    margin-left: 2%;
+    margin-bottom: 1.2%;
+}
+
+#h {
+    width: 60%;
+    border: 1px solid #0067F5;
+}
+
+/* ----------------------------------------- */
+
+/* ALL PAGE */
+
+.all_page {
+    width: 100%;
+    display: flex;
+}
+
+.all_page .side_bar {
+    width: 20%;
+    margin: 20px 0px 20px 20px;
+}
+
+.all_page .content {
+    background-color: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 77%;
+    margin: 20px;
+}
+
+.addStudent {
+    display: flex;
+}
+
+.courses {
+    display: grid;
+    grid-template-areas:
+        "v l";
+    grid-template-columns: 3fr 2fr;
+}
+
+.video {
+    grid-area: "v";
+}
+
+.lessons {
+    grid-area: "l";
+}
+
+/* ----------------------------------------- */
+
+/* SIDE BAR */
+
+.side_bar {
+    text-align: center;
+
+}
+
+/* SIDE BAR - LOGO */
+
+.side_bar {
+    text-align: center;
+
+}
+
+/* SIDE BAR - LOGO */
+
+a {
+    color: white;
+    font-family: Roboto;
+    text-decoration: none;
+}
+
+.side_bar_logo_settings {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.side_bar_logo_text {
+    margin-left: 5%;
+    font-size: 24px;
+    font-weight: medium;
+}
+
+/* SIDE BAR - LINKS */
+
+.side_bar_links {
+    margin-top: 30%;
+}
+
+.side_bar_img {
+    margin-left: 5%;
+}
+
+.side_bar_text {
+    margin-left: 5%;
+    font-size: 100%;
+}
+
+.side_bar_general {
+    display: flex;
+    align-items: center;
+    margin-left: 11%;
+    background-color: white;
+    width: 110%;
+    border-radius: 20px 0 0 20px;
+}
+
+.side_bar_general svg {
+    margin-left: 3.6%;
+}
+
+.side_bar_general p a {
+    color: #FB6D3A;
+}
+
+.side_bar_courses {
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.support-img {
+    margin-top: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-img img {
+    width: 60%;
+    height: 100%;
+}
+
+.side_bar_timeTable {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.side_bar_settings {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+/* SEARCH INPUT */
+
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    --input-text-color: #1b9bee;
+    --input-bg-color: #F6F6F5;
+    --focus-input-bg-color: transparent;
+    --text-color: #949faa;
+    --active-color: #1b9bee;
+    --width-of-input: 100%;
+    --inline-padding-of-input: 1.2em;
+    --gap: 0.9rem;
+}
+
+/* form style */
+.form {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: var(--width-of-input);
+    position: relative;
+    isolation: isolate;
+    width: 90%;
+    height: 37px;
+}
+
+/* a fancy bg for showing background and border when focus. */
+.fancy-bg {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    background: var(--input-bg-color);
+    border-radius: 30px;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* label styling */
+label {
+    width: 100%;
+    padding: 0.8em;
+    height: 40px;
+    padding-inline: var(--inline-padding-of-input);
+    display: flex;
+    align-items: center;
+}
+
+.search,
+.close-btn {
+    position: absolute;
+}
+
+/* styling search-icon */
+.search {
+    fill: var(--text-color);
+    left: var(--inline-padding-of-input);
+}
+
+
+
+/* styling of close button */
+.close-btn {
+    border: none;
+    right: var(--inline-padding-of-input);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--active-color);
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* styling of input */
+.input {
+    color: var(--input-text-color);
+    width: 100%;
+    margin-inline: min(2em, calc(var(--inline-padding-of-input) + var(--gap)));
+    background: none;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--text-color)
+}
+
+/* input background change in focus */
+.input:focus~.fancy-bg {
+    border: 1px solid var(--active-color);
+    background: var(--focus-input-bg-color);
+}
+
+/* search icon color change in focus */
+.input:focus~.search {
+    fill: var(--active-color);
+}
+
+/* showing close button when typing */
+.input:valid~.close-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
+
+/* notification-img-style */
+
+.notification-img {
+    margin-left: 1%;
+}
+
+/* this is a recreation of twitter search in css */
+/*картинка с плюсом*/
+#plus {
+    width: 6%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.img-plus {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    width: 60%;
+    margin-left: 16%;
+    margin-bottom: 1%;
+    justify-content: center;
+}
+
+.content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.inputs {
+    display: flex;
+    margin-left: 13%;
+    margin-top: 7%;
+}
+
+.r-side {
+    margin-left: 25%;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputDiv label {
+    font-weight: 300;
+    font-size: 12px;
+    color: #000000;
+    margin-top: 0%;
+    font-family: 'Roboto';
+}
+
+.inputDiv input {
+    width: 120%;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #0067F5
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.submitButton button {
+    margin-top: 5%;
+    background: #0078C2;
+    border-radius: 14px;
+    width: 28%;
+    height: 50px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 8%;
+}
+
+/* Important styles */
+#toggle {
+    display: block;
+    width: 28px;
+    height: 30px;
+    margin: 30px auto 10px;
+}
+
+#toggle span:after,
+#toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+}
+
+#toggle span:after {
+    top: 9px;
+}
+
+#toggle span {
+    position: relative;
+    display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+    width: 100%;
+    height: 4px;
+    background-color: #77adff;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+
+/* on activation */
+#toggle.on span {
+    background-color: transparent;
+}
+
+#toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#toggle.on+#menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* menu appearance*/
+#menu {
+    position: absolute;
+    right: 0%;
+    color: #999;
+    width: 10%;
+    padding: 10px;
+    margin: auto;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+    /* just for this demo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+}
+
+#menu:after {
+    position: absolute;
+    top: -15px;
+    left: 95px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+}
+
+ul,
+li,
+li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    padding: 5px;
+    color: #888;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+li a:hover,
+li a:focus {
+    background: #22549E;
+    color: #fff;
+}
+
+.burger {
+    margin-left: 1%;
+}
+
+.back {
+    margin-top: 23%;
+    margin-left: 1%;
+}
+
+#back {
+    transform: rotate(180deg);
+}
+
+#menu:after {
+    display: none;
+}
+
+
+
+
+
+@media screen and (min-width:300px) and (max-width:768px) {
+    .f img {
+        width: 40px;
+        height: 40px;
+        margin-left: 5%;
+    }
+
+    p {
+        font-size: 38px;
+    }
+
+    a {
+        font-size: 38px;
+    }
+
+    i {
+        display: none;
+    }
+
+    .menu__btn {
+        display: block;
+    }
+
+    .notification-img {
+        display: none;
+    }
+
+    .user-img {
+        display: none;
+    }
+
+    .content-header {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 2fr;
+        justify-content: start;
+        margin-bottom: 10%;
+        margin-top: 4%;
+        margin-left: 3%;
+    }
+
+    .form {
+        height: 70px;
+        border-radius: 5px;
+        width: 95%;
+        margin-left: 1%;
+    }
+
+    .form input {
+        font-size: xx-large;
+    }
+
+    .search svg {
+        width: 40px;
+        height: 40px;
+        margin-right: 5%;
+    }
+
+    .search {
+        margin-top: .5%;
+        margin-left: 2%;
+    }
+
+    .close-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .close-btn svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    body {
+        background-color: #1F4989;
+    }
+
+    .support-img {
+        display: none;
+    }
+
+    .side_bar_links {
+        display: none;
+    }
+
+    .all_page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all_page .side_bar {
+        width: 100%;
+        background-color: #1F4989;
+        height: 100px;
+        margin: 0;
+        padding-bottom: 1.6%;
+        padding-top: 1%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 2px 2px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .side_bar_logo_settings {
+        margin-top: 1%;
+        margin-left: 3%;
+        margin-bottom: 1%;
+    }
+
+    .side_bar_logo {
+        height: 55px;
+        width: 55px;
+    }
+
+    .side_bar_logo_text {
+        margin-left: 6%;
+        font-weight: 600;
+    }
+
+    .all_page .content {
+        background-color: white;
+        border-radius: 20px;
+        height: 100%;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .prevBtn img {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 40%;
+    }
+
+    .plus img {
+        height: 90px;
+        width: 90px;
+        margin-bottom: 6%;
+    }
+
+    .inputDiv input {
+        width: 90%;
+    }
+
+    .submitButton button {
+        margin-top: 13%;
+        height: 50px;
+        font-size: 20px;
+        width: 80%;
+        margin-bottom: 13%;
+    }
+
+    .prevBtn img {
+        display: flex;
+        justify-content: center;
+        position: static;
+        margin-left: 40%;
+        margin-top: 11%;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 11%;
+    }
+
+    .info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .r-side {
+        margin-left: 0;
+    }
+
+    .inputs {
+        display: block;
+    }
+
+    #back {
+        transform: rotate(180deg);
+        display: none;
+    }
+
+    #plus {
+        width: 15%;
+    }
+
+    .inputDiv label {
+        font-weight: 300;
+        font-size: 20px;
+        color: #000000;
+        margin-top: 2%;
+        font-family: 'Roboto';
+        position: relative;
+    }
+
+    .inputDiv input {
+        font-size: 20px;
+    }
+
+    .back1 {
+        display: block;
+    }
+
+    #back2 {
+        transform: rotate(180deg);
+        width: 20%;
+        height: 20%;
+        display: block;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        position: relative;
+        left: 38%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1100px) {
+
+    #menu {
+        margin-right: 4%;
+        width: auto;
+    }
+
+    #menu a {
+        font-size: 14px;
+    }
+
+    .back {
+        position: relative;
+        left: 42%;
+        margin-bottom: 6%;
+        margin-top: 4%;
+    }
+
+    .k {
+        width: 30px;
+        height: 30px;
+    }
+
+    .side_bar_text p {
+        font-size: 38px;
+    }
+
+    .input {
+        font-size: 20px;
+    }
+
+    .search svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    #menu:after {
+        display: none;
+    }
+
+    .form {
+        width: 82%;
+        height: 53px;
+    }
+
+    .side_bar_img:nth-child(2) {
+        width: 32px;
+        height: 32px;
+    }
+
+    .support-img img {
+        width: 86%;
+    }
+
+    .online p {
+        font-size: 25px;
+        margin-right: 4%;
+    }
+
+    .online {
+        width: 60%;
+        position: relative;
+        right: 8%;
+    }
+
+    #plus {
+        width: 60px;
+        height: 60px;
+    }
+
+    .back1 {
+        display: block;
+    }
+
+    .back {
+        display: none;
+    }
+
+    #back2 {
+        transform: rotate(180deg);
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        position: relative;
+        left: 44%;
+    }
+
+    .info {
+        margin-top: 7%;
+        margin-left: 20%;
+    }
+
+    .submitButton button {
+        width: auto;
+    }
+
+    .r-side {
+        margin-left: 15%;
+    }
+
+    .inputDiv input {
+        width: 90%;
+    }
+}

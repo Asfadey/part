@@ -1,0 +1,567 @@
+/* BODY */
+
+body {
+  background-color: #22549E;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------------------------------------- */
+
+/* ALL PAGE */
+
+.all_page {
+  width: 100%;
+  display: flex;
+}
+
+.all_page .side_bar {
+  width: 20%;
+  margin: 20px 0px 20px 20px;
+}
+
+.all_page .content {
+  background-color: white;
+  border-radius: 40px;
+  height: 100%;
+  width: 77%;
+  margin: 20px;
+  overflow: hidden;
+}
+
+
+/* ----------------------------------------- */
+
+/* SIDE BAR */
+
+.side_bar {
+  text-align: center;
+
+}
+
+/* SIDE BAR - LOGO */
+
+a {
+  color: white;
+  font-family: Roboto;
+  text-decoration: none;
+}
+
+.side_bar_logo_settings {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.side_bar_logo_text {
+  margin-left: 5%;
+  font-size: 24px;
+  font-weight: medium;
+}
+
+/* SIDE BAR - LINKS */
+
+.side_bar { 
+	text-align: center; 
+
+} 
+
+/* SIDE BAR - LOGO */ 
+
+a { 
+	color: white; 
+	font-family: Roboto; 
+	text-decoration: none; 
+} 
+
+.side_bar_logo_settings { 
+	display: flex; 
+	align-items: center; 
+	margin-left: 10%; 
+} 
+
+.side_bar_logo_text { 
+	margin-left: 5%; 
+	font-size: 24px; 
+	font-weight: medium; 
+} 
+
+/* SIDE BAR - LINKS */ 
+
+
+.side_bar_links { 
+	margin-top: 30%; 
+} 
+ 
+.side_bar_general { 
+	display: flex; 
+	align-items: center; 
+	margin-left: 10%; 
+	width: 110%; 
+	border-radius: 20px 0 0 20px; 
+} 
+ 
+.side_bar_img { 
+	margin-left: 5%; 
+} 
+ 
+.side_bar_text { 
+	margin-left: 5%; 
+	font-size: 100%; 
+} 
+ 
+ 
+.side_bar_courses { 
+	display: flex; 
+	align-items: center; 
+	margin-left: 10%; 
+} 
+.side_bar_students { 
+	display: flex; 
+	align-items: center; 
+	margin-left: 10%; 
+	margin-top: 2%; 
+	background-color: white; 
+	width: 110%; 
+	border-radius: 20px 0 0 20px; 
+	padding-left: 5%; 
+} 
+.side_bar_students a { 
+	color: #FB6D3A; 
+} 
+.support-img { 
+	margin-top: 25%; 
+	align-items: center; 
+	justify-content: center; 
+} 
+ 
+.support-img img { 
+	width: 60%; 
+	height: 100%; 
+} 
+ 
+.side_bar_timeTable { 
+	display: flex; 
+	align-items: center; 
+	margin-left: 14%; 
+	margin-top: 2%; 
+} 
+.side_bar_answers { 
+	display: flex; 
+	align-items: center; 
+	margin-left: 10%; 
+	margin-top: 2%; 
+} 
+.side_bar_settings { 
+	display: flex; 
+	align-items: center; 
+	margin-left: 14%; 
+	margin-top: 2%; 
+} 
+.exit { 
+	background: #C21700; 
+	color: #fff; 
+	padding: 4%; 
+	display: block; 
+	width: 26%; 
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: 20%; 
+border-radius: 15px; 
+}
+
+/* SIDEBAR */
+
+main {
+  padding: 48px;
+  padding-top: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  align-items: center;
+}
+
+.user-img {
+  margin-left: 1%;
+  margin-top: 2%;
+}
+
+.form {
+  --input-text-color: #1b9bee;
+  --focus-input-bg-color: transparent;
+  --text-color: #949faa;
+  --width-of-input: 100%;
+  --inline-padding-of-input: 1.2em;
+  --gap: -0.5rem;
+}
+
+/* form style */
+.form {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: var(--width-of-input);
+  position: relative;
+  isolation: isolate;
+  width: 30%;
+  height: 37px;
+  margin-left: 3%;
+  background: #DCEAFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+/* label styling */
+label {
+  width: 100%;
+  padding: 0.8em;
+  height: 40px;
+  padding-inline: var(--inline-padding-of-input);
+  display: flex;
+  align-items: center;
+}
+
+/* styling search-icon */
+.form svg{
+  fill: var(--text-color);
+  left: var(--inline-padding-of-input);
+}
+
+/* styling of close button */
+.close-btn {
+  border: none;
+  right: var(--inline-padding-of-input);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--active-color);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* styling of input */
+.input {
+  color: var(--input-text-color);
+  width: 100%;
+  margin-inline: min(2em, calc(var(--inline-padding-of-input) + var(--gap)));
+  background: none;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-color)
+}
+
+/* input background change in focus */
+.input:focus~.fancy-bg {
+  border: 1px solid var(--active-color);
+  background: var(--focus-input-bg-color);
+}
+
+/* search icon color change in focus */
+.input:focus~.search {
+  fill: var(--active-color);
+}
+
+/* showing close button when typing */
+.input:valid~.close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+
+.burger {
+    margin-left: 1%;
+}
+
+h2{
+  color: #000;
+}
+
+h2{
+  color: #000;
+}
+
+/* Main */
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+	align-items: flex-start;
+  margin-bottom: 5%;
+}
+
+.current-month{
+  color: #000;
+  font-weight: bold;
+	margin-left: 30px;
+}
+
+.month-select {
+  width: 120px;
+  height: 38px;
+  opacity: 0.9;
+  margin-right: 30px;
+  padding: 2px;
+  width: 100%;
+	background: #DCEAFF;
+	border-radius: 14px;
+	color: #000;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: none;
+}
+
+.monthButton {
+	margin-right: 3%;
+}
+
+#second-title-table {
+	position: relative;
+	left: 113%;
+}
+
+.button {
+    width: 140px;
+    height: 40px;
+    background: #0F54BC;
+    border: none;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.leave-button{
+  margin-top: 10%;
+}
+
+.leave-button button{
+  width: 120px;
+  height: 35px;
+  color: #FFFFFF;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Таблица учеников */
+
+.table-container {
+	display: flex;
+	width: 100%;
+}
+
+table {
+	justify-content: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td {
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 17px;
+	position: relative;
+}
+
+thead {
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+
+tr th {
+	width: 10%;
+}
+
+th {
+	border: none;
+	padding: 8px;
+	position: relative;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+td::before, th::before {
+	content: "";
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	width: 1px;
+	height: 100%;
+}
+
+td::after, th::after {
+	content: "";
+	position: absolute;
+	left: -1px;
+	bottom: -1px;
+	width: 100%;
+	height: 1px;
+}
+
+/* Ссылки студентов */
+
+.student-links {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	gap: 9px;
+	margin-top: 50px;
+}
+
+.student-list {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	list-style: none;
+}
+
+.student-item a {
+	color: #1F4989;
+}
+
+/* списки */
+
+.expandable {
+	background: #DCEAFF; 
+	box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25); 
+	border-radius: 14px; 
+	padding: 15px 0 4px 10px; 
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 20%;     
+} 
+ .expandable p { 
+	margin-top: 0; 
+	font-family: 'Roboto'; 
+	font-style: normal; 
+	font-weight: 800; 
+	margin-bottom: 1%; 
+	margin-left: 10px; 
+	color: #333; 
+	white-space: pre-wrap;
+	text-align: center;
+} 
+.expandable-header { 
+	display: flex; 
+	align-items: center; 
+	cursor: pointer; 
+	margin-bottom: 1%; 
+	white-space: nowrap; 
+} 
+.expandable-header p { 
+	 
+	white-space: nowrap; 
+}
+.expandable-content { 
+	height: 0; 
+	overflow: hidden; 
+	transition: height 0.3s ease-in-out; 
+	margin-top: 4%; 
+	line-height: 1.5; 
+}
+
+.expandable.open .expandable-header i img { 
+	transform: rotate(180deg); 
+	width: 4%; 
+	height: 4%; 
+} 
+ .expandable.open .expandable-content { 
+	height: auto; 
+}
+
+.expandable-content p:hover { 
+	background-color: #bcc1c8; 
+}
+
+.big-list {
+  display: none;
+	position: absolute;
+	width: 40%;
+}
+
+.big-text-container {
+	width: 40%;
+	position: fixed;
+	background-color: #6CAFD9;
+	z-index: 9999;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: -1%;
+	margin-left: 17%;
+	margin-bottom: 3000px;
+	padding: 50px 0 50px 30px;
+	border-radius: 25px;
+}
+
+.big-text {
+	flex-shrink: 0;
+	margin-bottom: 20px;
+}
+
+.exit-btn {
+	background-color: #C21700;
+	border: none;
+	padding: 13px 20px;
+	border-radius: 14px;
+	color: #fff;
+	margin-top: 20px;
+	margin-left: 75%;
+	cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
